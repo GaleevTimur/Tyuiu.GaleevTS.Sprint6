@@ -11,7 +11,7 @@ namespace Tyuiu.GaleevTS.Sprint6.Task0.V5.Lib
     {
         public double Calculate(int x)
         {
-            double res = -1.4 * Math.Pow((double)x,3) + Math.Pow(2.3 * (double)x,2) + 0.6 * (double)x;
+            double res = -1.4 * Math.Pow((double)x,3) + Math.Pow(2.3 * (double)x,2) + 0.6 * (double)x; 
             return Math.Round(res, 3);
         }
     }

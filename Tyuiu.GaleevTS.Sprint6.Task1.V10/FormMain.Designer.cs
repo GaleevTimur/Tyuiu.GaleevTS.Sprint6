@@ -29,38 +29,26 @@ namespace Tyuiu.GaleevTS.Sprint6.Task1.V10
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBoxCondition_GTS = new System.Windows.Forms.GroupBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBoxResult_GTS = new System.Windows.Forms.GroupBox();
+            this.labelResultTag_GTS = new System.Windows.Forms.Label();
+            this.textBoxResult_GTS = new System.Windows.Forms.TextBox();
             this.groupBoxInput_GTS = new System.Windows.Forms.GroupBox();
-            this.textBoxInputStart = new System.Windows.Forms.TextBox();
-            this.textBoxInPutStop = new System.Windows.Forms.TextBox();
-            this.labelStartInput_GTS = new System.Windows.Forms.Label();
             this.labelEndInput_GTS = new System.Windows.Forms.Label();
+            this.labelStartInput_GTS = new System.Windows.Forms.Label();
+            this.textBoxInPutStop = new System.Windows.Forms.TextBox();
+            this.textBoxInputStart = new System.Windows.Forms.TextBox();
             this.buttonFAQ_GTS = new System.Windows.Forms.Button();
             this.buttonCompleteTask_GTS = new System.Windows.Forms.Button();
-            this.textBoxResult_GTS = new System.Windows.Forms.TextBox();
-            this.labelResultTag_GTS = new System.Windows.Forms.Label();
-            this.textBoxCondition = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelConditionPicture = new System.Windows.Forms.Label();
-            this.groupBoxCondition_GTS.SuspendLayout();
+            this.groupBoxCondition_GTS = new System.Windows.Forms.GroupBox();
+            this.textBoxCondition = new System.Windows.Forms.TextBox();
             this.groupBoxResult_GTS.SuspendLayout();
             this.groupBoxInput_GTS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBoxCondition_GTS.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBoxCondition_GTS
-            // 
-            this.groupBoxCondition_GTS.Controls.Add(this.labelConditionPicture);
-            this.groupBoxCondition_GTS.Controls.Add(this.pictureBox1);
-            this.groupBoxCondition_GTS.Controls.Add(this.textBoxCondition);
-            this.groupBoxCondition_GTS.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxCondition_GTS.Name = "groupBoxCondition_GTS";
-            this.groupBoxCondition_GTS.Size = new System.Drawing.Size(566, 331);
-            this.groupBoxCondition_GTS.TabIndex = 0;
-            this.groupBoxCondition_GTS.TabStop = false;
-            this.groupBoxCondition_GTS.Text = "Условие";
             // 
             // groupBoxResult_GTS
             // 
@@ -72,6 +60,26 @@ namespace Tyuiu.GaleevTS.Sprint6.Task1.V10
             this.groupBoxResult_GTS.TabIndex = 1;
             this.groupBoxResult_GTS.TabStop = false;
             this.groupBoxResult_GTS.Text = "Вывод данных";
+            // 
+            // labelResultTag_GTS
+            // 
+            this.labelResultTag_GTS.AutoSize = true;
+            this.labelResultTag_GTS.Location = new System.Drawing.Point(6, 25);
+            this.labelResultTag_GTS.Name = "labelResultTag_GTS";
+            this.labelResultTag_GTS.Size = new System.Drawing.Size(62, 13);
+            this.labelResultTag_GTS.TabIndex = 1;
+            this.labelResultTag_GTS.Text = "Результат:";
+            // 
+            // textBoxResult_GTS
+            // 
+            this.textBoxResult_GTS.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxResult_GTS.Location = new System.Drawing.Point(0, 41);
+            this.textBoxResult_GTS.Multiline = true;
+            this.textBoxResult_GTS.Name = "textBoxResult_GTS";
+            this.textBoxResult_GTS.ReadOnly = true;
+            this.textBoxResult_GTS.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxResult_GTS.Size = new System.Drawing.Size(199, 404);
+            this.textBoxResult_GTS.TabIndex = 0;
             // 
             // groupBoxInput_GTS
             // 
@@ -86,19 +94,14 @@ namespace Tyuiu.GaleevTS.Sprint6.Task1.V10
             this.groupBoxInput_GTS.TabStop = false;
             this.groupBoxInput_GTS.Text = "Ввод данных";
             // 
-            // textBoxInputStart
+            // labelEndInput_GTS
             // 
-            this.textBoxInputStart.Location = new System.Drawing.Point(7, 59);
-            this.textBoxInputStart.Name = "textBoxInputStart";
-            this.textBoxInputStart.Size = new System.Drawing.Size(134, 20);
-            this.textBoxInputStart.TabIndex = 3;
-            // 
-            // textBoxInPutStop
-            // 
-            this.textBoxInPutStop.Location = new System.Drawing.Point(170, 60);
-            this.textBoxInPutStop.Name = "textBoxInPutStop";
-            this.textBoxInPutStop.Size = new System.Drawing.Size(134, 20);
-            this.textBoxInPutStop.TabIndex = 4;
+            this.labelEndInput_GTS.AutoSize = true;
+            this.labelEndInput_GTS.Location = new System.Drawing.Point(167, 44);
+            this.labelEndInput_GTS.Name = "labelEndInput_GTS";
+            this.labelEndInput_GTS.Size = new System.Drawing.Size(69, 13);
+            this.labelEndInput_GTS.TabIndex = 5;
+            this.labelEndInput_GTS.Text = "Конец шага:";
             // 
             // labelStartInput_GTS
             // 
@@ -109,14 +112,19 @@ namespace Tyuiu.GaleevTS.Sprint6.Task1.V10
             this.labelStartInput_GTS.TabIndex = 3;
             this.labelStartInput_GTS.Text = "Старт шага:";
             // 
-            // labelEndInput_GTS
+            // textBoxInPutStop
             // 
-            this.labelEndInput_GTS.AutoSize = true;
-            this.labelEndInput_GTS.Location = new System.Drawing.Point(167, 44);
-            this.labelEndInput_GTS.Name = "labelEndInput_GTS";
-            this.labelEndInput_GTS.Size = new System.Drawing.Size(69, 13);
-            this.labelEndInput_GTS.TabIndex = 5;
-            this.labelEndInput_GTS.Text = "Конец шага:";
+            this.textBoxInPutStop.Location = new System.Drawing.Point(170, 60);
+            this.textBoxInPutStop.Name = "textBoxInPutStop";
+            this.textBoxInPutStop.Size = new System.Drawing.Size(134, 20);
+            this.textBoxInPutStop.TabIndex = 4;
+            // 
+            // textBoxInputStart
+            // 
+            this.textBoxInputStart.Location = new System.Drawing.Point(7, 59);
+            this.textBoxInputStart.Name = "textBoxInputStart";
+            this.textBoxInputStart.Size = new System.Drawing.Size(134, 20);
+            this.textBoxInputStart.TabIndex = 3;
             // 
             // buttonFAQ_GTS
             // 
@@ -140,37 +148,6 @@ namespace Tyuiu.GaleevTS.Sprint6.Task1.V10
             this.buttonCompleteTask_GTS.UseVisualStyleBackColor = false;
             this.buttonCompleteTask_GTS.Click += new System.EventHandler(this.buttonCompleteTask_GTS_Click);
             // 
-            // textBoxResult_GTS
-            // 
-            this.textBoxResult_GTS.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxResult_GTS.Location = new System.Drawing.Point(0, 41);
-            this.textBoxResult_GTS.Multiline = true;
-            this.textBoxResult_GTS.Name = "textBoxResult_GTS";
-            this.textBoxResult_GTS.ReadOnly = true;
-            this.textBoxResult_GTS.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult_GTS.Size = new System.Drawing.Size(199, 404);
-            this.textBoxResult_GTS.TabIndex = 0;
-            // 
-            // labelResultTag_GTS
-            // 
-            this.labelResultTag_GTS.AutoSize = true;
-            this.labelResultTag_GTS.Location = new System.Drawing.Point(6, 25);
-            this.labelResultTag_GTS.Name = "labelResultTag_GTS";
-            this.labelResultTag_GTS.Size = new System.Drawing.Size(62, 13);
-            this.labelResultTag_GTS.TabIndex = 1;
-            this.labelResultTag_GTS.Text = "Результат:";
-            // 
-            // textBoxCondition
-            // 
-            this.textBoxCondition.Location = new System.Drawing.Point(6, 40);
-            this.textBoxCondition.Multiline = true;
-            this.textBoxCondition.Name = "textBoxCondition";
-            this.textBoxCondition.ReadOnly = true;
-            this.textBoxCondition.Size = new System.Drawing.Size(554, 301);
-            this.textBoxCondition.TabIndex = 0;
-            this.textBoxCondition.Text = "Написать программу, которая выводит таблицу значений функции F(x) на заданном диа" +
-    "пазоне. ";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Tyuiu.GaleevTS.Sprint6.Task1.V10.Properties.Resources.Снимок_экрана_2023_12_03_145634;
@@ -190,6 +167,29 @@ namespace Tyuiu.GaleevTS.Sprint6.Task1.V10
             this.labelConditionPicture.TabIndex = 2;
             this.labelConditionPicture.Text = "Функция:";
             // 
+            // groupBoxCondition_GTS
+            // 
+            this.groupBoxCondition_GTS.Controls.Add(this.labelConditionPicture);
+            this.groupBoxCondition_GTS.Controls.Add(this.pictureBox1);
+            this.groupBoxCondition_GTS.Controls.Add(this.textBoxCondition);
+            this.groupBoxCondition_GTS.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxCondition_GTS.Name = "groupBoxCondition_GTS";
+            this.groupBoxCondition_GTS.Size = new System.Drawing.Size(566, 331);
+            this.groupBoxCondition_GTS.TabIndex = 0;
+            this.groupBoxCondition_GTS.TabStop = false;
+            this.groupBoxCondition_GTS.Text = "Условие";
+            // 
+            // textBoxCondition
+            // 
+            this.textBoxCondition.Location = new System.Drawing.Point(6, 40);
+            this.textBoxCondition.Multiline = true;
+            this.textBoxCondition.Name = "textBoxCondition";
+            this.textBoxCondition.ReadOnly = true;
+            this.textBoxCondition.Size = new System.Drawing.Size(554, 301);
+            this.textBoxCondition.TabIndex = 0;
+            this.textBoxCondition.Text = "Написать программу, которая выводит таблицу значений функции F(x) на заданном диа" +
+    "пазоне. ";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,23 +205,19 @@ namespace Tyuiu.GaleevTS.Sprint6.Task1.V10
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 1 | Вариант 10 | Галеев Т. С.";
-            this.groupBoxCondition_GTS.ResumeLayout(false);
-            this.groupBoxCondition_GTS.PerformLayout();
             this.groupBoxResult_GTS.ResumeLayout(false);
             this.groupBoxResult_GTS.PerformLayout();
             this.groupBoxInput_GTS.ResumeLayout(false);
             this.groupBoxInput_GTS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBoxCondition_GTS.ResumeLayout(false);
+            this.groupBoxCondition_GTS.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBoxCondition_GTS;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBoxCondition;
         private System.Windows.Forms.GroupBox groupBoxResult_GTS;
         private System.Windows.Forms.Label labelResultTag_GTS;
         private System.Windows.Forms.TextBox textBoxResult_GTS;
@@ -232,7 +228,10 @@ namespace Tyuiu.GaleevTS.Sprint6.Task1.V10
         private System.Windows.Forms.TextBox textBoxInputStart;
         private System.Windows.Forms.Button buttonFAQ_GTS;
         private System.Windows.Forms.Button buttonCompleteTask_GTS;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelConditionPicture;
+        private System.Windows.Forms.GroupBox groupBoxCondition_GTS;
+        private System.Windows.Forms.TextBox textBoxCondition;
     }
 }
 

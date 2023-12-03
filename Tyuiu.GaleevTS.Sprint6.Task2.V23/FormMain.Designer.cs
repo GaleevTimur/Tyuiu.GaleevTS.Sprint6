@@ -29,10 +29,10 @@ namespace Tyuiu.GaleevTS.Sprint6.Task2.V23
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBoxCondition_GTS = new System.Windows.Forms.GroupBox();
             this.labelConditionPicture = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -182,18 +182,18 @@ namespace Tyuiu.GaleevTS.Sprint6.Task2.V23
             // 
             // chartFunction_GTS
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartFunction_GTS.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartFunction_GTS.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_GTS.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFunction_GTS.Legends.Add(legend1);
             this.chartFunction_GTS.Location = new System.Drawing.Point(154, 42);
             this.chartFunction_GTS.Name = "chartFunction_GTS";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartFunction_GTS.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunction_GTS.Series.Add(series1);
             this.chartFunction_GTS.Size = new System.Drawing.Size(512, 372);
             this.chartFunction_GTS.TabIndex = 3;
             this.chartFunction_GTS.Text = "chart1";
@@ -205,14 +205,14 @@ namespace Tyuiu.GaleevTS.Sprint6.Task2.V23
             this.dataGridViewFunctionResult_GTS.AllowUserToResizeColumns = false;
             this.dataGridViewFunctionResult_GTS.AllowUserToResizeRows = false;
             this.dataGridViewFunctionResult_GTS.BackgroundColor = System.Drawing.SystemColors.ButtonShadow;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewFunctionResult_GTS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewFunctionResult_GTS.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewFunctionResult_GTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFunctionResult_GTS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Xfunction,
@@ -259,7 +259,7 @@ namespace Tyuiu.GaleevTS.Sprint6.Task2.V23
             this.Controls.Add(this.groupBoxInput_GTS);
             this.Controls.Add(this.groupBoxCondition_GTS);
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 2 | Вариант 10 | Галеев Т. С.";
             this.groupBoxCondition_GTS.ResumeLayout(false);
             this.groupBoxCondition_GTS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

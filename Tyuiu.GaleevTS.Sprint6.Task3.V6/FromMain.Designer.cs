@@ -130,7 +130,7 @@ namespace Tyuiu.GaleevTS.Sprint6.Task3.V6
             this.MaximizeBox = false;
             this.Name = "FromMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Спринт 6 | Таск 3 | Вариант 6 | Галеев Т. С.";
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxInPut_GTS.ResumeLayout(false);
             this.groupBoxInPut_GTS.PerformLayout();

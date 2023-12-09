@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using Tyuiu.GaleevTS.Sprint6.Task3.V6.Lib;
 
 namespace Tyuiu.GaleevTS.Sprint6.Task3.V6.Test
 {
@@ -9,6 +10,21 @@ namespace Tyuiu.GaleevTS.Sprint6.Task3.V6.Test
         [TestMethod]
         public void TestMethod1()
         {
+            DataService ds = new DataService();
+            int[,] mtrx = new int[5, 5] { {-2, -10, -8, 11, 1 },
+                                      {-15, -9, -4, -15, 18},
+                                      {-15, 12, 7, 6, 9},
+                                      {-14, -10, 10, 18, -5},
+                                      {-1, 7, -19, -19, -4 } };
+            int[,] wait = new int[5, 5];
+            wait = ds.Calculate(mtrx);
+
+            int[,] res = new int[5, 5] { {-2, -10, -8, 11, 1 },
+                                      {-15, -9, -4, -15, 18},
+                                      {-15, 0, 7, 0, 9},
+                                      {-14, -10, 10, 18, -5},
+                                      {-1, 7, -19, -19, -4 } };
+            CollectionAssert.AreEqual(res, mtrx);
         }
     }
 }

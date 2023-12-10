@@ -73,7 +73,10 @@ namespace Tyuiu.GaleevTS.Sprint6.Task7.V9
             this.Controls.Add(this.buttonClose_GTS);
             this.Controls.Add(this.textBoxInfo_GTS);
             this.Controls.Add(this.pictureBoxProfile_GTS);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormAbout";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormAbout";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile_GTS)).EndInit();
             this.ResumeLayout(false);

@@ -58,7 +58,7 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
             // 
             // pictureBoxProfile_GTS
             // 
-            this.pictureBoxProfile_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.AQACCjVFilY9tQfBWZnO63NB_Nn4FCReV4vHENhJeJ6zLqLBhoEJT2aAcVEWfIOu155FrW6vSR2F0doiZ_aV_CZAKpA;
+            this.pictureBoxProfile_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.AQACCjVFilY9tQfBWZnO63NB_Nn4FCReV4vHENhJeJ6zLqLBhoEJT2aAcVEWfIOu155FrW6vSR2F0doiZ_aV_CZAKpA1;
             this.pictureBoxProfile_GTS.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxProfile_GTS.Name = "pictureBoxProfile_GTS";
             this.pictureBoxProfile_GTS.Size = new System.Drawing.Size(266, 237);

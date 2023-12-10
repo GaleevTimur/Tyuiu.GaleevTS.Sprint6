@@ -32,9 +32,6 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelInfo_GTS = new System.Windows.Forms.Panel();
-            this.buttonHelp_GTS = new System.Windows.Forms.Button();
-            this.buttonDone_GTS = new System.Windows.Forms.Button();
-            this.buttonOpenFile_GTS = new System.Windows.Forms.Button();
             this.splitterPanel_GTS = new System.Windows.Forms.Splitter();
             this.panelData_GTS = new System.Windows.Forms.Panel();
             this.groupBoxOutPut_GTS = new System.Windows.Forms.GroupBox();
@@ -45,6 +42,9 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
             this.textBoxCondition_GTS = new System.Windows.Forms.TextBox();
             this.openFileDialogTask_GTS = new System.Windows.Forms.OpenFileDialog();
             this.toolTip_GTS = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonHelp_GTS = new System.Windows.Forms.Button();
+            this.buttonDone_GTS = new System.Windows.Forms.Button();
+            this.buttonOpenFile_GTS = new System.Windows.Forms.Button();
             this.panelInfo_GTS.SuspendLayout();
             this.panelData_GTS.SuspendLayout();
             this.groupBoxOutPut_GTS.SuspendLayout();
@@ -63,43 +63,6 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
             this.panelInfo_GTS.Name = "panelInfo_GTS";
             this.panelInfo_GTS.Size = new System.Drawing.Size(800, 64);
             this.panelInfo_GTS.TabIndex = 0;
-            // 
-            // buttonHelp_GTS
-            // 
-            this.buttonHelp_GTS.BackColor = System.Drawing.Color.DarkGray;
-            this.buttonHelp_GTS.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonHelp_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.help;
-            this.buttonHelp_GTS.Location = new System.Drawing.Point(712, 0);
-            this.buttonHelp_GTS.Name = "buttonHelp_GTS";
-            this.buttonHelp_GTS.Size = new System.Drawing.Size(88, 61);
-            this.buttonHelp_GTS.TabIndex = 3;
-            this.toolTip_GTS.SetToolTip(this.buttonHelp_GTS, "Сведение о программе");
-            this.buttonHelp_GTS.UseVisualStyleBackColor = false;
-            this.buttonHelp_GTS.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // buttonDone_GTS
-            // 
-            this.buttonDone_GTS.BackColor = System.Drawing.Color.Silver;
-            this.buttonDone_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.page_add;
-            this.buttonDone_GTS.Location = new System.Drawing.Point(94, 3);
-            this.buttonDone_GTS.Name = "buttonDone_GTS";
-            this.buttonDone_GTS.Size = new System.Drawing.Size(93, 58);
-            this.buttonDone_GTS.TabIndex = 2;
-            this.toolTip_GTS.SetToolTip(this.buttonDone_GTS, "Выводит предпоследнее слово каждой строки в результирующею строку");
-            this.buttonDone_GTS.UseVisualStyleBackColor = false;
-            this.buttonDone_GTS.Click += new System.EventHandler(this.buttonDone_GTS_Click);
-            // 
-            // buttonOpenFile_GTS
-            // 
-            this.buttonOpenFile_GTS.BackColor = System.Drawing.Color.Silver;
-            this.buttonOpenFile_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.folder_page;
-            this.buttonOpenFile_GTS.Location = new System.Drawing.Point(0, 3);
-            this.buttonOpenFile_GTS.Name = "buttonOpenFile_GTS";
-            this.buttonOpenFile_GTS.Size = new System.Drawing.Size(88, 58);
-            this.buttonOpenFile_GTS.TabIndex = 1;
-            this.toolTip_GTS.SetToolTip(this.buttonOpenFile_GTS, "Открыть файл\r\nВыберите нужный файл для обработки\r\n");
-            this.buttonOpenFile_GTS.UseVisualStyleBackColor = false;
-            this.buttonOpenFile_GTS.Click += new System.EventHandler(this.buttonOpenFile_GTS_Click);
             // 
             // splitterPanel_GTS
             // 
@@ -194,6 +157,44 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
             this.toolTip_GTS.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip_GTS.ToolTipTitle = "Подсказка";
             // 
+            // buttonHelp_GTS
+            // 
+            this.buttonHelp_GTS.BackColor = System.Drawing.Color.DarkGray;
+            this.buttonHelp_GTS.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonHelp_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.help;
+            this.buttonHelp_GTS.Location = new System.Drawing.Point(712, 0);
+            this.buttonHelp_GTS.Name = "buttonHelp_GTS";
+            this.buttonHelp_GTS.Size = new System.Drawing.Size(88, 61);
+            this.buttonHelp_GTS.TabIndex = 3;
+            this.toolTip_GTS.SetToolTip(this.buttonHelp_GTS, "Сведение о программе");
+            this.buttonHelp_GTS.UseVisualStyleBackColor = false;
+            this.buttonHelp_GTS.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // buttonDone_GTS
+            // 
+            this.buttonDone_GTS.BackColor = System.Drawing.Color.Silver;
+            this.buttonDone_GTS.Enabled = false;
+            this.buttonDone_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.page_add;
+            this.buttonDone_GTS.Location = new System.Drawing.Point(94, 3);
+            this.buttonDone_GTS.Name = "buttonDone_GTS";
+            this.buttonDone_GTS.Size = new System.Drawing.Size(93, 58);
+            this.buttonDone_GTS.TabIndex = 2;
+            this.toolTip_GTS.SetToolTip(this.buttonDone_GTS, "Выводит предпоследнее слово каждой строки в результирующею строку");
+            this.buttonDone_GTS.UseVisualStyleBackColor = false;
+            this.buttonDone_GTS.Click += new System.EventHandler(this.buttonDone_GTS_Click);
+            // 
+            // buttonOpenFile_GTS
+            // 
+            this.buttonOpenFile_GTS.BackColor = System.Drawing.Color.Silver;
+            this.buttonOpenFile_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.folder_page;
+            this.buttonOpenFile_GTS.Location = new System.Drawing.Point(0, 3);
+            this.buttonOpenFile_GTS.Name = "buttonOpenFile_GTS";
+            this.buttonOpenFile_GTS.Size = new System.Drawing.Size(88, 58);
+            this.buttonOpenFile_GTS.TabIndex = 1;
+            this.toolTip_GTS.SetToolTip(this.buttonOpenFile_GTS, "Открыть файл\r\nВыберите нужный файл для обработки\r\n");
+            this.buttonOpenFile_GTS.UseVisualStyleBackColor = false;
+            this.buttonOpenFile_GTS.Click += new System.EventHandler(this.buttonOpenFile_GTS_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,14 +224,14 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
         private System.Windows.Forms.Button buttonOpenFile_GTS;
         private System.Windows.Forms.Splitter splitterPanel_GTS;
         private System.Windows.Forms.Panel panelData_GTS;
-        private System.Windows.Forms.GroupBox groupBoxOutPut_GTS;
-        private System.Windows.Forms.TextBox textBoxOutPut_GTS;
         private System.Windows.Forms.GroupBox groupBoxInPut_GTS;
         private System.Windows.Forms.TextBox textBoxInPut_GTS;
         private System.Windows.Forms.GroupBox groupBoxCondition_GTS;
         private System.Windows.Forms.TextBox textBoxCondition_GTS;
         private System.Windows.Forms.OpenFileDialog openFileDialogTask_GTS;
         private System.Windows.Forms.ToolTip toolTip_GTS;
+        private System.Windows.Forms.GroupBox groupBoxOutPut_GTS;
+        private System.Windows.Forms.TextBox textBoxOutPut_GTS;
     }
 }
 

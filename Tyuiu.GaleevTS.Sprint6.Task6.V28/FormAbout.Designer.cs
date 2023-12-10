@@ -30,20 +30,11 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
-            this.pictureBoxProfile_GTS = new System.Windows.Forms.PictureBox();
             this.textBoxInfo_GTS = new System.Windows.Forms.TextBox();
             this.buttonClose_GTS = new System.Windows.Forms.Button();
+            this.pictureBoxProfile_GTS = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile_GTS)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBoxProfile_GTS
-            // 
-            this.pictureBoxProfile_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.AQACCjVFilY9tQfBWZnO63NB_Nn4FCReV4vHENhJeJ6zLqLBhoEJT2aAcVEWfIOu155FrW6vSR2F0doiZ_aV_CZAKpA;
-            this.pictureBoxProfile_GTS.Location = new System.Drawing.Point(12, 12);
-            this.pictureBoxProfile_GTS.Name = "pictureBoxProfile_GTS";
-            this.pictureBoxProfile_GTS.Size = new System.Drawing.Size(266, 237);
-            this.pictureBoxProfile_GTS.TabIndex = 0;
-            this.pictureBoxProfile_GTS.TabStop = false;
             // 
             // textBoxInfo_GTS
             // 
@@ -65,6 +56,15 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
             this.buttonClose_GTS.UseVisualStyleBackColor = true;
             this.buttonClose_GTS.Click += new System.EventHandler(this.buttonClose_GTS_Click);
             // 
+            // pictureBoxProfile_GTS
+            // 
+            this.pictureBoxProfile_GTS.Image = global::Tyuiu.GaleevTS.Sprint6.Task6.V28.Properties.Resources.AQACCjVFilY9tQfBWZnO63NB_Nn4FCReV4vHENhJeJ6zLqLBhoEJT2aAcVEWfIOu155FrW6vSR2F0doiZ_aV_CZAKpA;
+            this.pictureBoxProfile_GTS.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxProfile_GTS.Name = "pictureBoxProfile_GTS";
+            this.pictureBoxProfile_GTS.Size = new System.Drawing.Size(266, 237);
+            this.pictureBoxProfile_GTS.TabIndex = 0;
+            this.pictureBoxProfile_GTS.TabStop = false;
+            // 
             // FormAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -74,11 +74,12 @@ namespace Tyuiu.GaleevTS.Sprint6.Task6.V28
             this.Controls.Add(this.textBoxInfo_GTS);
             this.Controls.Add(this.pictureBoxProfile_GTS);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAbout";
+            this.Text = "О программе";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile_GTS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
